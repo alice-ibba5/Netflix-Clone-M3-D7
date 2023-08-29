@@ -1,0 +1,28 @@
+.navbar {
+    background-color: black;
+}
+
+.logo {
+    height: 35px;
+}
+
+body {
+    background-color: black;
+}
+
+.avatar {
+    height: 30px;
+}
+
+.bi {
+    color: white;
+}
+
+.jumbotron {
+    font-weight: bold;
+}
+
+.jumbotron button {
+    background-color: black;
+
+}
