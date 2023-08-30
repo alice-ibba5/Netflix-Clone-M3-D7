@@ -26,3 +26,16 @@ body {
     background-color: black;
 
 }
+
+#carousel img:hover {
+    transform: scale(110%);
+    box-shadow: 5px 5px 15px 5px #3a3a3a;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.carousel-inner {
+    overflow: visible;
+}
