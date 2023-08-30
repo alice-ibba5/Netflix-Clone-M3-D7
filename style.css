@@ -24,18 +24,41 @@ body {
 
 .jumbotron button {
     background-color: black;
-
 }
 
-#carousel img:hover {
+.dropdown-menu {
+    background-color: black;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.film:hover {
     transform: scale(110%);
     box-shadow: 5px 5px 15px 5px #3a3a3a;
     height: 100%;
-    z-index: 1;
+    z-index: 2;
     cursor: pointer;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .carousel-inner {
     overflow: visible;
+}
+
+.film {    
+    transition: transform 0.2s ease-in-out;
+}
+
+#carousel button {
+    width: 7%;
+}
+
+.icons {
+    margin-top: 100px;
+}
+
+.icons i {
+    padding: 20px;
 }
