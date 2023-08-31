@@ -57,8 +57,53 @@ body {
 
 .icons {
     margin-top: 100px;
+    margin-bottom: 25px;
 }
 
 .icons i {
     padding: 20px;
+}
+
+footer {
+    color: rgb(148, 147, 147);
+}
+
+footer button {
+    background-color: black;
+    color: rgb(148, 147, 147);
+    border: 1px solid rgb(148, 147, 147);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.bi-c-circle {
+    color: rgb(148, 147, 147);
+    margin-bottom: 20px;
+}
+
+.overlay {
+    position: fixed;
+    min-height: 100%;
+    display: grid;
+    place-items: center;
+    z-index: 99999999999;
+    background-color: black;
+    background-size: cover;
+    animation: logo-overlay 4s ease-in-out forwards;
+}
+
+.overlay img {
+    width: 80%;
+}
+
+@keyframes logo-overlay {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+        height: 0px;
+    }
 }
