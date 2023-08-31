@@ -90,14 +90,29 @@ footer button {
     z-index: 99999999999;
     background-color: black;
     background-size: cover;
-    animation: logo-overlay 4s ease-in-out forwards;
+    animation: puff-out-center 6s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
 }
 
 .overlay img {
     width: 80%;
 }
 
-@keyframes logo-overlay {
+@keyframes puff-out-center {
+    0% {
+      transform: scale(1);
+      filter: blur(0px);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(2);
+      filter: blur(4px);
+      opacity: 0;
+      z-index: -1;
+      height: 0px;
+    }
+  }
+
+/*@keyframes logo-overlay {
     0% {
         opacity: 1;
     }
@@ -106,7 +121,7 @@ footer button {
         z-index: -1;
         height: 0px;
     }
-}
+}*/
 
 .carousel-item {
     z-index: 1;
