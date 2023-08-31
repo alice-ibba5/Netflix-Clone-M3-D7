@@ -107,3 +107,62 @@ footer button {
         height: 0px;
     }
 }
+
+.carousel-item {
+    z-index: 1;
+    transition: z-index 0.75s ease-in-out;
+}
+
+.carousel-item:hover {
+    z-index: 2;
+}
+
+.carousel-item .card .card-body {
+    opacity: 0;
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.75s ease-in-out;
+}
+
+.carousel-item .card {
+    transform: scale(1);
+    transition: transform 0.75s ease-in-out;
+}
+
+.carousel-item .card:hover {
+    transform: scale(1.04);   
+}
+
+.carousel-item .card:hover .card-body {
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: unset;
+    background-color: black;
+    box-shadow: 5px 5px 15px 5px #3a3a3a;
+    color: white;
+}
+
+.carousel-item .card .card-body::after {
+    content: "";
+    position: absolute;
+    bottom: calc(100% - 1px);
+    left: 0;
+    width: 100%;
+    height: 20%;
+    transition: all 0.75s ease-in-out;
+}
+
+.card-body i::before {
+    opacity: 0.3;
+    transform: scale(1);
+    transition: all 0.75s ease-in-out;
+    cursor: pointer;
+}
+
+.card-body i:hover::before {
+    opacity: 1;
+    transform: scale(1.2);
+}
