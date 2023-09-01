@@ -90,7 +90,7 @@ footer button {
     z-index: 99999999999;
     background-color: black;
     background-size: cover;
-    animation: puff-out-center 6s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+    animation: puff-out-center 8s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
 }
 
 .overlay img {
