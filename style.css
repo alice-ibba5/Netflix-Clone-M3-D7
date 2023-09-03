@@ -102,6 +102,7 @@ footer button {
     }
     75% {
         opacity: 1;
+        filter: blur(0px);
     }
     100% {
       transform: scale(2);
