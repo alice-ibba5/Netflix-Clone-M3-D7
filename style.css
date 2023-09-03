@@ -94,10 +94,6 @@ footer button {
     animation: puff-out-center 4s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
 }
 
-.overlay img {
-   
-}
-
 @keyframes puff-out-center {
     0% {
       transform: scale(1);
