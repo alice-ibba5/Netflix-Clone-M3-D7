@@ -84,17 +84,18 @@ footer button {
 
 .overlay {
     position: fixed;
-    min-height: 100%;
+    min-height: 120%;
+    min-width: 100%;
     display: grid;
     place-items: center;
     z-index: 99999999999;
     background-color: black;
     background-size: cover;
-    animation: puff-out-center 8s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+    animation: puff-out-center 4s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
 }
 
 .overlay img {
-    width: 80%;
+   
 }
 
 @keyframes puff-out-center {
@@ -102,6 +103,9 @@ footer button {
       transform: scale(1);
       filter: blur(0px);
       opacity: 1;
+    }
+    75% {
+        opacity: 1;
     }
     100% {
       transform: scale(2);
